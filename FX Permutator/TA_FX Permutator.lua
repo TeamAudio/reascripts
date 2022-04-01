@@ -1,0 +1,5 @@
+-- @description FX Permutator
+-- @version 0.99.1
+-- @metapackage
+-- @provides
+--   [main] TA_FX Permutator.luac > TA_FX Permutator.lua
