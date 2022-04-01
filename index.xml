@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts"/>
+<index version="1" name="Team Audio Scripts" commit="c59768f756a5c894db936d338094d64b00343151">
+  <category name="FX Permutator">
+    <reapack name="TA_FX Permutator.lua" type="script" desc="FX Permutator">
+      <version name="0.99.1" time="2022-04-01T05:14:58Z">
+        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/c59768f756a5c894db936d338094d64b00343151/FX%20Permutator/TA_FX%20Permutator.luac</source>
+      </version>
+    </reapack>
+  </category>
+</index>
