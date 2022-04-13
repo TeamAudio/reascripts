@@ -1,4 +1,6 @@
--- Tech Audio Shuffle FX Positions for Selected Tracks
+--@description TA Shuffle FX Positions for Selected Tracks
+--@version 1.0
+--@author Tech Audio
 function is_matching_table(t1,t2)
  return table.concat(t1) == table.concat(t2)
 end
