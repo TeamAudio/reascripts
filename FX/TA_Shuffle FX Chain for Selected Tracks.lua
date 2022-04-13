@@ -4,18 +4,23 @@ function is_matching_table(t1,t2)
 end
 
 function shuffle(tbl)
- local t ={}
- for i = 1 ,#tbl do
-  table.insert(t,tbl[i])
- end
- for j = #t, 2, -1 do
-  local k = math.random(j)
-  t[j], t[k] = t[k], t[j]
- end
- if is_matching_table(tbl, t) then
-  t = shuffle(tbl)
- end
- return t
+ if #tbl > 1 then
+  local t ={}
+  for i = 1 ,#tbl do
+   table.insert(t,tbl[i])
+  end
+  for j = #t, 2, -1 do
+   local k = math.random(j)
+   t[j], t[k] = t[k], t[j]
+  end
+  if is_matching_table(tbl, t) then
+   t = shuffle(tbl)
+  end
+  return t
+ else
+  return tbl	
+ end	
+ 
 end
 
 local current_selected_track_count = reaper.CountSelectedTracks(0)
