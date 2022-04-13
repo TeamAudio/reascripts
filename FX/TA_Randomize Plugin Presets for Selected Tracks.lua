@@ -1,4 +1,6 @@
--- Tech Audio Randomize the presets of all plugins for selected tracks
+--@description TA Randomize the presets of all plugins for selected tracks
+--@version 1.0
+--@author Tech Audio
 local current_selected_track_count = reaper.CountSelectedTracks(0)
 for i = 0, current_selected_track_count do
 	local found_selected_track = reaper.GetSelectedTrack(0, i)
