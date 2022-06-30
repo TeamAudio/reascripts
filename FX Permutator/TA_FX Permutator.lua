@@ -1,5 +1,6 @@
 -- @description FX Permutator
--- @version 0.99.3
+-- @version 0.99.4
+-- @author Tech Audio
 -- @metapackage
 -- @provides
 --   [main] TA_FX Permutator.luac > TA_FX Permutator.lua
