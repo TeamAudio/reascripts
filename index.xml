@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="44bd501ae52950e501d287c081b0e24333264e4b">
+<index version="1" name="Team Audio Scripts" commit="ce1753cf98db57801a08232e9f52c53b605d96f3">
   <category name="FX">
     <reapack name="TA_Randomize Plugin Presets for Selected Tracks.lua" type="script" desc="TA Randomize the presets of all plugins for selected tracks">
       <version name="1.0" author="Tech Audio" time="2022-04-13T23:59:35Z">
@@ -25,6 +25,9 @@
       </version>
       <version name="0.99.4" author="Tech Audio" time="2022-06-30T16:24:16Z">
         <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/44bd501ae52950e501d287c081b0e24333264e4b/FX%20Permutator/TA_FX%20Permutator.luac</source>
+      </version>
+      <version name="0.99.5" author="Tech Audio" time="2022-10-06T22:45:47Z">
+        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/ce1753cf98db57801a08232e9f52c53b605d96f3/FX%20Permutator/TA_FX%20Permutator.luac</source>
       </version>
     </reapack>
   </category>
