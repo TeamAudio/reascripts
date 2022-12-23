@@ -1,5 +1,5 @@
 -- @description FX Permutator
--- @version 0.99.9
+-- @version 1.0.0
 -- @author Tech Audio
 -- @metapackage
 -- @provides
