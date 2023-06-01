@@ -1,5 +1,11 @@
 -- @description FX Permutator
--- @version 1.0.0
+-- @version 1.1.0
+-- @changelog
+--   HiDPI/Retina support
+--   AU plugin support
+--   Plugin priority option
+--   Usability improvements
+--   Performance optimization
 -- @author Tech Audio
 -- @metapackage
 -- @provides
