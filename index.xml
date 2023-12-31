@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="c1ee347ae57e49d6128b747c38ec498ce75c0704">
+<index version="1" name="Team Audio Scripts" commit="2b57646ad5e6270f6447abbf03e0deeece560ef0">
   <category name="FX">
     <reapack name="TA_Randomize Plugin Presets for Selected Tracks.lua" type="script" desc="TA Randomize the presets of all plugins for selected tracks">
       <version name="1.0" author="Tech Audio" time="2022-04-13T23:59:35Z">
@@ -69,6 +69,14 @@ New FX Container specific actions in the Tools menu
         <source main="main">https://github.com/TeamAudio/reascripts/raw/c1ee347ae57e49d6128b747c38ec498ce75c0704/FX%20Permutator/TA_FX%20Permutator.lua</source>
         <source file="TA_FX Permutator-5.3.dat">https://github.com/TeamAudio/reascripts/raw/c1ee347ae57e49d6128b747c38ec498ce75c0704/FX%20Permutator/TA_FX%20Permutator-5.3.dat</source>
         <source file="TA_FX Permutator-5.4.dat">https://github.com/TeamAudio/reascripts/raw/c1ee347ae57e49d6128b747c38ec498ce75c0704/FX%20Permutator/TA_FX%20Permutator-5.4.dat</source>
+      </version>
+      <version name="1.3.1" author="Tech Audio" time="2023-12-31T17:35:43Z">
+        <changelog><![CDATA[General UI improvements
+Selected FX filter
+Activation fix for Windows]]></changelog>
+        <source main="main">https://github.com/TeamAudio/reascripts/raw/2b57646ad5e6270f6447abbf03e0deeece560ef0/FX%20Permutator/TA_FX%20Permutator.lua</source>
+        <source file="TA_FX Permutator-5.3.dat">https://github.com/TeamAudio/reascripts/raw/2b57646ad5e6270f6447abbf03e0deeece560ef0/FX%20Permutator/TA_FX%20Permutator-5.3.dat</source>
+        <source file="TA_FX Permutator-5.4.dat">https://github.com/TeamAudio/reascripts/raw/2b57646ad5e6270f6447abbf03e0deeece560ef0/FX%20Permutator/TA_FX%20Permutator-5.4.dat</source>
       </version>
     </reapack>
   </category>
