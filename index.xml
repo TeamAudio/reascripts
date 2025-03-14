@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="507b74dad1afc13f5618cfb808df49e44e456e72">
+<index version="1" name="Team Audio Scripts" commit="659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668">
   <category name="FX">
     <reapack name="TA_Randomize Plugin Presets for Selected Tracks.lua" type="script" desc="TA Randomize the presets of all plugins for selected tracks">
       <version name="1.0" author="Tech Audio" time="2022-04-13T23:59:35Z">
@@ -108,18 +108,18 @@ Discord
       </metadata>
       <version name="1.0" author="teamaudio" time="2025-03-14T19:36:01Z">
         <changelog><![CDATA[Initial release]]></changelog>
-        <source>https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/reapack.lua</source>
-        <source main="main" file="TA_XY Pad.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/TA_XY%20Pad.lua</source>
-        <source main="main" file="TA_XY Pad Set X.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/TA_XY%20Pad%20Set%20X.lua</source>
-        <source main="main" file="TA_XY Pad Set Y.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/TA_XY%20Pad%20Set%20Y.lua</source>
-        <source main="main" file="TA_XY Pad Full Reset.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/TA_XY%20Pad%20Full%20Reset.lua</source>
-        <source type="script" file="config.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/config.lua</source>
-        <source type="script" file="dkjson.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/dkjson.lua</source>
-        <source type="script" file="extstate.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/extstate.lua</source>
-        <source type="script" file="fonts.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/fonts.lua</source>
-        <source type="script" file="logging.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/logging.lua</source>
-        <source type="script" file="mappings.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/mappings.lua</source>
-        <source type="script" file="ui.lua">https://github.com/TeamAudio/reascripts/raw/507b74dad1afc13f5618cfb808df49e44e456e72/FX/xypad/ui.lua</source>
+        <source>https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/reapack.lua</source>
+        <source main="main" file="TA_XY Pad.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/TA_XY%20Pad.lua</source>
+        <source main="main" file="TA_XY Pad Set X.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/TA_XY%20Pad%20Set%20X.lua</source>
+        <source main="main" file="TA_XY Pad Set Y.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/TA_XY%20Pad%20Set%20Y.lua</source>
+        <source main="main" file="TA_XY Pad Full Reset.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/TA_XY%20Pad%20Full%20Reset.lua</source>
+        <source type="script" file="config.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/config.lua</source>
+        <source type="script" file="dkjson.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/dkjson.lua</source>
+        <source type="script" file="extstate.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/extstate.lua</source>
+        <source type="script" file="fonts.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/fonts.lua</source>
+        <source type="script" file="logging.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/logging.lua</source>
+        <source type="script" file="mappings.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/mappings.lua</source>
+        <source type="script" file="ui.lua">https://github.com/TeamAudio/reascripts/raw/659d9e38ae5de5a8d26a6e1ef53bdf5575dfd668/FX/xypad/ui.lua</source>
       </version>
     </reapack>
   </category>
