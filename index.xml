@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="2b57646ad5e6270f6447abbf03e0deeece560ef0">
+<index version="1" name="Team Audio Scripts" commit="8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016">
   <category name="FX">
     <reapack name="TA_Randomize Plugin Presets for Selected Tracks.lua" type="script" desc="TA Randomize the presets of all plugins for selected tracks">
       <version name="1.0" author="Tech Audio" time="2022-04-13T23:59:35Z">
@@ -9,6 +9,36 @@
     <reapack name="TA_Shuffle FX Chain for Selected Tracks.lua" type="script" desc="TA Shuffle FX Positions for Selected Tracks">
       <version name="1.0" author="Tech Audio" time="2022-04-13T23:55:44Z">
         <source main="main">https://github.com/TeamAudio/reascripts/raw/562a3963637259d8f0129061936bb1adad54e95d/FX/TA_Shuffle%20FX%20Chain%20for%20Selected%20Tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="TA_XY Pad.lua" type="script" desc="TechAudio XY Pad">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 XY Pad is super cool!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 We all know this, but should probably explain how.\par}
+}
+]]></description>
+        <link rel="website">https://github.com/TeamAudio</link>
+      </metadata>
+      <version name="1.0" author="techaudio" time="2025-03-14T18:17:41Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source>https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/TA_XY%20Pad.lua</source>
+        <source main="main" file="xypad/TA_XY Pad.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/TA_XY%20Pad.lua</source>
+        <source main="main" file="xypad/TA_XY Set X.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/TA_XY%20Set%20X.lua</source>
+        <source main="main" file="xypad/TA_XY Set Y.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/TA_XY%20Set%20Y.lua</source>
+        <source type="script" file="xypad/config.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/config.lua</source>
+        <source type="script" file="xypad/dkjson.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/dkjson.lua</source>
+        <source type="script" file="xypad/extstate.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/extstate.lua</source>
+        <source type="script" file="xypad/fonts.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/fonts.lua</source>
+        <source type="script" file="xypad/logging.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/logging.lua</source>
+        <source type="script" file="xypad/mappings.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/mappings.lua</source>
+        <source type="script" file="xypad/path_history.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/path_history.lua</source>
+        <source type="script" file="xypad/paths.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/paths.lua</source>
+        <source type="script" file="xypad/storage.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/storage.lua</source>
+        <source type="script" file="xypad/ui.lua">https://github.com/TeamAudio/reascripts/raw/8f8f0565d19bf4e6a3a6b0e2596ae93b9ac73016/FX/xypad/ui.lua</source>
       </version>
     </reapack>
   </category>
