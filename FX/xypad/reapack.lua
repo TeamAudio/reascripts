@@ -1,0 +1,38 @@
+-- @about
+--   # XY Pad by Team Audio
+--
+--   Bad case of too many FX params and not enough hands? There's a pad for that!
+--
+--   ### Getting Started
+--   1. Make sure ReaImGui is installed (available through ReaPack)
+--   2. Touch the param you're interested in.
+--   3. Run either "TA_XY Set X" or "TA_XY Set Y" to map the param to an axis.
+--     - in case it's not obvious, the X axis is horizontal and the Y axis is vertical.
+--   4. Click on the pad, dragging to control all mapped parameters.
+--     - You can also bypass or invert the mapping! Click "Show Mappings" to uh...show your mappings.
+--   5. Sit back, close your eyes, and ponder the new sonic horizons you've opened up.
+--   
+--   ### Join our community!
+--   - [Discord](https://discord.gg/fCnkP9PhTQ)
+-- @description XY Pad, by Team Audio
+-- @link https://techaud.io
+-- @link https://github.com/TeamAudio
+-- @link https://discord.gg/fCnkP9PhTQ
+-- @version 1.0
+-- @author teamaudio
+-- @changelog
+--   Initial release
+-- @provides
+--   [nomain] .
+--   [main] TA_XY Pad.lua
+--   [main] TA_XY Pad Set X.lua
+--   [main] TA_XY Pad Set Y.lua
+--   [main] TA_XY Pad Full Reset.lua
+--   [lua] config.lua
+--   [lua] dkjson.lua
+--   [lua] extstate.lua
+--   [lua] fonts.lua
+--   [lua] logging.lua
+--   [lua] mappings.lua
+--   [lua] ui.lua
+
