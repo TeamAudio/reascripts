@@ -9,20 +9,19 @@
 -- @author techaudio
 -- @changelog
 --   Initial release
--- @noindex
 -- @provides
 --   [nomain] .
---   [main] TA_XY Pad.lua
---   [main] TA_XY Set X.lua
---   [main] TA_XY Set Y.lua
---   [lua] config.lua
---   [lua] dkjson.lua
---   [lua] extstate.lua
---   [lua] fonts.lua
---   [lua] logging.lua
---   [lua] mappings.lua
---   [lua] path_history.lua
---   [lua] paths.lua
---   [lua] storage.lua
---   [lua] ui.lua
+--   [main] xypad/TA_XY Pad.lua
+--   [main] xypad/TA_XY Set X.lua
+--   [main] xypad/TA_XY Set Y.lua
+--   [lua] xypad/config.lua
+--   [lua] xypad/dkjson.lua
+--   [lua] xypad/extstate.lua
+--   [lua] xypad/fonts.lua
+--   [lua] xypad/logging.lua
+--   [lua] xypad/mappings.lua
+--   [lua] xypad/path_history.lua
+--   [lua] xypad/paths.lua
+--   [lua] xypad/storage.lua
+--   [lua] xypad/ui.lua
 
