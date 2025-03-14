@@ -25,15 +25,15 @@
 --   Initial release
 -- @provides
 --   [nomain] .
---   [main] TA_XY Pad.lua
---   [main] TA_XY Pad Set X.lua
---   [main] TA_XY Pad Set Y.lua
---   [main] TA_XY Pad Full Reset.lua
---   [lua] config.lua
---   [lua] dkjson.lua
---   [lua] extstate.lua
---   [lua] fonts.lua
---   [lua] logging.lua
---   [lua] mappings.lua
---   [lua] ui.lua
+--   [main] xypad/TA_XY Pad.lua
+--   [main] xypad/TA_XY Pad Set X.lua
+--   [main] xypad/TA_XY Pad Set Y.lua
+--   [main] xypad/TA_XY Pad Full Reset.lua
+--   [lua] xypad/config.lua
+--   [lua] xypad/dkjson.lua
+--   [lua] xypad/extstate.lua
+--   [lua] xypad/fonts.lua
+--   [lua] xypad/logging.lua
+--   [lua] xypad/mappings.lua
+--   [lua] xypad/ui.lua
 
