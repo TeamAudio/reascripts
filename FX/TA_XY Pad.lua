@@ -1,0 +1,28 @@
+-- @about
+--   # XY Pad is super cool!
+--
+--   We all know this, but should probably explain how.
+-- @description TechAudio XY Pad
+-- @link https://techaud.io
+-- @link https://github.com/TeamAudio
+-- @version 1.0
+-- @author techaudio
+-- @changelog
+--   Initial release
+-- @noindex
+-- @provides
+--   [nomain] .
+--   [main] TA_XY Pad.lua
+--   [main] TA_XY Set X.lua
+--   [main] TA_XY Set Y.lua
+--   [lua] config.lua
+--   [lua] dkjson.lua
+--   [lua] extstate.lua
+--   [lua] fonts.lua
+--   [lua] logging.lua
+--   [lua] mappings.lua
+--   [lua] path_history.lua
+--   [lua] paths.lua
+--   [lua] storage.lua
+--   [lua] ui.lua
+
