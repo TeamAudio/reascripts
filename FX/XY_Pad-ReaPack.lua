@@ -7,9 +7,9 @@
 --   1. Make sure ReaImGui is installed (available through ReaPack)
 --   2. Touch the param you're interested in.
 --   3. Run either "TA_XY Set X" or "TA_XY Set Y" to map the param to an axis.
---     - in case it's not obvious, the X axis is horizontal and the Y axis is vertical.
+--       In case it's not obvious, the X axis is horizontal and the Y axis is vertical.
 --   4. Click on the pad, dragging to control all mapped parameters.
---     - You can also bypass or invert the mapping! Click "Show Mappings" to uh...show your mappings.
+--       You can also bypass or invert the mapping! Click "Show Mappings" to uh...show your mappings.
 --   5. Sit back, close your eyes, and ponder the new sonic horizons you've opened up.
 --   
 --   ### Join our community!
@@ -20,7 +20,7 @@
 -- @link https://discord.gg/fCnkP9PhTQ
 -- @version 1.0
 -- @category FX
--- @author teamaudio
+-- @author Team Audio
 -- @changelog
 --   Initial release
 -- @provides
