@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="b927149c53a59db245b01ca5c48485c4ac319c51">
+<index version="1" name="Team Audio Scripts" commit="ed888ef1b2fd804a868de20d00a62bc8e02059ac">
   <category name="FX">
     <reapack name="TA_Randomize Plugin Presets for Selected Tracks.lua" type="script" desc="TA Randomize the presets of all plugins for selected tracks">
       <version name="1.0" author="Tech Audio" time="2022-04-13T23:59:35Z">
@@ -22,10 +22,8 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Getting Started\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Make sure ReaImGui is installed (available through ReaPack)\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Touch the param you're interested in.\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Run either "TA_XY Set X" or "TA_XY Set Y" to map the param to an axis.\sa180\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab in case it's not obvious, the X axis is horizontal and the Y axis is vertical.\sa180\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Click on the pad, dragging to control all mapped parameters.\sa180\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab You can also bypass or invert the mapping! Click "Show Mappings" to uh...show your mappings.\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Run either "TA_XY Set X" or "TA_XY Set Y" to map the param to an axis. In case it's not obvious, the X axis is horizontal and the Y axis is vertical.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Click on the pad, dragging to control all mapped parameters. You can also bypass or invert the mapping! Click "Show Mappings" to uh...show your mappings.\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Sit back, close your eyes, and ponder the new sonic horizons you've opened up.\sa180\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Join our community!\par}
 {\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "https://discord.gg/fCnkP9PhTQ"}}{\fldrslt{\ul
