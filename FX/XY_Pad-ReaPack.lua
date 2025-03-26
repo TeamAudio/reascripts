@@ -1,36 +1,36 @@
--- @about
---   # XY Pad by Team Audio
+--@about
+--  # XY Pad by Team Audio
 --
---   Bad case of too many FX params and not enough hands? There's a pad for that!
+--  Bad case of too many FX params and not enough hands? There's a pad for that!
 --
---   ### Getting Started
---   1. Make sure ReaImGui is installed (available through ReaPack)
---   2. Run XY Pad - you'll be greeted with some instructions on how to add mappings and configure your experience.
---   3. Add some mappings, and drag the cursor across the pad - eyes wide, watching those param values sing.
---   4. Sit back, close your eyes and ponder the new sonic horizons you've opened up.
---   
---   ### Join our community!
---   - [Discord](https://discord.gg/fCnkP9PhTQ)
--- @description XY Pad, by Team Audio
--- @link https://techaud.io
--- @link https://github.com/TeamAudio
--- @link https://discord.gg/fCnkP9PhTQ
--- @version 1.0
--- @category FX
--- @author Team Audio
--- @changelog
---   Initial release
--- @provides
---   [nomain] .
---   [main] xypad/TA_XY Pad.lua
---   [main] xypad/TA_XY Pad Set X.lua
---   [main] xypad/TA_XY Pad Set Y.lua
---   [main] xypad/TA_XY Pad Full Reset.lua
---   [lua] xypad/config.lua
---   [lua] xypad/dkjson.lua
---   [lua] xypad/extstate.lua
---   [lua] xypad/fonts.lua
---   [lua] xypad/logging.lua
---   [lua] xypad/mappings.lua
---   [lua] xypad/ui.lua
+--  ### Getting Started
+--  1. Make sure ReaImGui is installed (available through ReaPack)
+--  2. Run XY Pad - you'll be greeted with some instructions on how to add mappings and configure your experience.
+--  3. Add some mappings, and drag the cursor across the pad - eyes wide, watching those param values sing.
+--  4. Sit back, close your eyes and ponder the new sonic horizons you've opened up.
+--
+--  ### Join our community!
+--  - [Discord](https://discord.gg/fCnkP9PhTQ)
+--@description XY Pad, by Team Audio
+--@link https://techaud.io
+--@link https://github.com/TeamAudio
+--@link https://discord.gg/fCnkP9PhTQ
+--@version 1.0
+--@category FX
+--@author Team Audio
+--@changelog
+--  Initial release
+--@provides
+--  [nomain] .
+--  [main] xypad/TA_XY Pad.lua
+--  [main] xypad/TA_XY Pad Set X.lua
+--  [main] xypad/TA_XY Pad Set Y.lua
+--  [main] xypad/TA_XY Pad Full Reset.lua
+--  [lua] xypad/config.lua
+--  [lua] xypad/dkjson.lua
+--  [lua] xypad/extstate.lua
+--  [lua] xypad/fonts.lua
+--  [lua] xypad/logging.lua
+--  [lua] xypad/mappings.lua
+--  [lua] xypad/ui.lua
 
