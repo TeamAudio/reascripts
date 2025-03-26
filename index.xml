@@ -22,4 +22,32 @@ Activation fix for Windows]]></changelog>
       </version>
     </reapack>
   </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 REAPER scripts from the Tech Audio nerds at Team Audio\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Audio software by audio people for audio people!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 We're the Tech Audio group, a handful of the team members from {\field{\*\fldinst{HYPERLINK "https://teamaud.io"}}{\fldrslt{\ul
+Team Audio
+}}}
+ at-large.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 You can find a few handy scripts in the FX category in our repository here - more to come!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Beyond those, we've got some other projects out there and cooking - keep an eye on {\field{\*\fldinst{HYPERLINK "https://techaud.io"}}{\fldrslt{\ul
+TechAud.io
+}}}
+ for the latest news, releases & developer notes. We're learning a lot and looking forward to sharing.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Got ideas for scripts or plugins that you think would be great community resources? {\field{\*\fldinst{HYPERLINK "https://discord.gg/fCnkP9PhTQ"}}{\fldrslt{\ul
+Come hang out with us
+}}}
+ on discord!\par}
+}
+]]></description>
+    <link rel="website">https://techaud.io/</link>
+    <link rel="website">https://teamaud.io/</link>
+    <link rel="website">https://discord.gg/fCnkP9PhTQ</link>
+    <link rel="website">https://github.com/TeamAudio</link>
+    <link rel="website">https://x.com/techaud_io</link>
+  </metadata>
 </index>
