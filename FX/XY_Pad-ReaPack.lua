@@ -17,7 +17,7 @@
 --@link https://discord.gg/fCnkP9PhTQ
 --@version 1.0
 --@category FX
---@author Team Audio
+--@author Team Audio WTF
 --@changelog
 --  Initial release
 --@provides
