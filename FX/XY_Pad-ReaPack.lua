@@ -5,12 +5,9 @@
 --
 --   ### Getting Started
 --   1. Make sure ReaImGui is installed (available through ReaPack)
---   2. Touch the param you're interested in.
---   3. Run either "TA_XY Set X" or "TA_XY Set Y" to map the param to an axis.
---       In case it's not obvious, the X axis is horizontal and the Y axis is vertical.
---   4. Click on the pad, dragging to control all mapped parameters.
---       You can also bypass or invert the mapping! Click "Show Mappings" to uh...show your mappings.
---   5. Sit back, close your eyes, and ponder the new sonic horizons you've opened up.
+--   2. Run XY Pad - you'll be greeted with some instructions on how to add mappings and configure your experience.
+--   3. Add some mappings, and drag the cursor across the pad - eyes wide, watching those param values sing.
+--   4. Sit back, close your eyes and ponder the new sonic horizons you've opened up.
 --   
 --   ### Join our community!
 --   - [Discord](https://discord.gg/fCnkP9PhTQ)
