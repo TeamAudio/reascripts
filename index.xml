@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="2b57646ad5e6270f6447abbf03e0deeece560ef0">
+<index version="1" name="Team Audio Scripts" commit="614f664905749ef04eef7d8d89fa1bdd03031220">
   <category name="FX">
+    <reapack name="TA_FX Permutator.lua" type="script" desc="FX Permutator">
+      <version name="1.3.1" author="Tech Audio" time="2025-03-26T17:17:41Z">
+        <changelog><![CDATA[General UI improvements
+Selected FX filter
+Activation fix for Windows]]></changelog>
+        <source main="main">https://github.com/TeamAudio/reascripts/raw/614f664905749ef04eef7d8d89fa1bdd03031220/FX/TA_FX%20Permutator.lua</source>
+        <source file="fxperm/TA_FX Permutator-5.3.dat">https://github.com/TeamAudio/reascripts/raw/614f664905749ef04eef7d8d89fa1bdd03031220/FX/fxperm/TA_FX%20Permutator-5.3.dat</source>
+        <source file="fxperm/TA_FX Permutator-5.4.dat">https://github.com/TeamAudio/reascripts/raw/614f664905749ef04eef7d8d89fa1bdd03031220/FX/fxperm/TA_FX%20Permutator-5.4.dat</source>
+      </version>
+    </reapack>
     <reapack name="TA_Randomize Plugin Presets for Selected Tracks.lua" type="script" desc="TA Randomize the presets of all plugins for selected tracks">
       <version name="1.0" author="Tech Audio" time="2022-04-13T23:59:35Z">
         <source main="main">https://github.com/TeamAudio/reascripts/raw/c550f5c0050289758fe1c8f5b5d06a9dfcafd3e4/FX/TA_Randomize%20Plugin%20Presets%20for%20Selected%20Tracks.lua</source>
@@ -8,76 +18,36 @@
     </reapack>
     <reapack name="TA_Shuffle FX Chain for Selected Tracks.lua" type="script" desc="TA Shuffle FX Positions for Selected Tracks">
       <version name="1.0" author="Tech Audio" time="2022-04-13T23:55:44Z">
-        <source main="main">https://github.com/TeamAudio/reascripts/raw/562a3963637259d8f0129061936bb1adad54e95d/FX/TA_Shuffle%20FX%20Chain%20for%20Selected%20Tracks.lua</source>
+        <source main="main">https://github.com/TeamAudio/reascripts/raw/0273d87c713e533cc90295165dd632932d86252e/FX/TA_Shuffle%20FX%20Chain%20for%20Selected%20Tracks.lua</source>
       </version>
     </reapack>
   </category>
-  <category name="FX Permutator">
-    <reapack name="TA_FX Permutator.lua" type="script" desc="FX Permutator">
-      <version name="0.99.1" time="2022-04-01T05:14:58Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/c59768f756a5c894db936d338094d64b00343151/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="0.99.2" time="2022-05-23T18:54:07Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/2a10e9dc3a8b578b061706831238793967d7146f/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="0.99.3" time="2022-06-07T20:48:22Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/4901fcd999f5fdee65ce20392c2633269ac3868e/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="0.99.4" author="Tech Audio" time="2022-06-30T16:24:16Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/44bd501ae52950e501d287c081b0e24333264e4b/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="0.99.5" author="Tech Audio" time="2022-10-06T22:45:47Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/ce1753cf98db57801a08232e9f52c53b605d96f3/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="0.99.6" author="Tech Audio" time="2022-10-19T15:03:09Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/d36c373752f2cc7437daf07c79688482aafaaebd/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="0.99.7" author="Tech Audio" time="2022-10-26T23:08:30Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/d0ddea4940aabd7d8195dfef275b99305ec739d9/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="0.99.8" author="Tech Audio" time="2022-11-18T19:09:53Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/00a6f2810d8699dc3233a5aef22dc1a30ba862de/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="0.99.9" author="Tech Audio" time="2022-11-30T07:30:42Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/d014fba3f219b6beae2fd996fb2ee16e7f67e18d/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="1.0.0" author="Tech Audio" time="2022-12-23T20:48:15Z">
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/962358bcbe9d53e76e0feaa6595bc299af8dd3ac/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="1.1.0" author="Tech Audio" time="2023-06-01T17:18:37Z">
-        <changelog><![CDATA[HiDPI/Retina support
-AU plugin support
-Plugin priority option
-Usability improvements
-Performance optimization]]></changelog>
-        <source main="main" file="TA_FX Permutator.lua">https://github.com/TeamAudio/reascripts/raw/3e5e5f793104150d07318c73753550e0caf29733/FX%20Permutator/TA_FX%20Permutator.luac</source>
-      </version>
-      <version name="1.2.0" author="Tech Audio" time="2023-10-17T17:29:36Z">
-        <changelog><![CDATA[REAPER 7 support]]></changelog>
-        <source main="main">https://github.com/TeamAudio/reascripts/raw/ecead4cbe79aca26db079ce1cc6a9406bd53c553/FX%20Permutator/TA_FX%20Permutator.lua</source>
-        <source file="TA_FX Permutator-5.3.dat">https://github.com/TeamAudio/reascripts/raw/ecead4cbe79aca26db079ce1cc6a9406bd53c553/FX%20Permutator/TA_FX%20Permutator-5.3.dat</source>
-        <source file="TA_FX Permutator-5.4.dat">https://github.com/TeamAudio/reascripts/raw/ecead4cbe79aca26db079ce1cc6a9406bd53c553/FX%20Permutator/TA_FX%20Permutator-5.4.dat</source>
-      </version>
-      <version name="1.3.0" author="Tech Audio" time="2023-12-07T03:50:50Z">
-        <changelog><![CDATA[Parallel Chance % feature allows root level FX of run to be run in parallel.
-FX Containers: New Options menu tab allows you to create FX Container as part of your FX Permutator run with their own unique parameters.
-New FX Container specific actions in the Tools menu 
-- Randomize Container Params 
-- Randomize Container Presets
-- Shuffle Container FX
- Additional Logging for plugin load failures]]></changelog>
-        <source main="main">https://github.com/TeamAudio/reascripts/raw/c1ee347ae57e49d6128b747c38ec498ce75c0704/FX%20Permutator/TA_FX%20Permutator.lua</source>
-        <source file="TA_FX Permutator-5.3.dat">https://github.com/TeamAudio/reascripts/raw/c1ee347ae57e49d6128b747c38ec498ce75c0704/FX%20Permutator/TA_FX%20Permutator-5.3.dat</source>
-        <source file="TA_FX Permutator-5.4.dat">https://github.com/TeamAudio/reascripts/raw/c1ee347ae57e49d6128b747c38ec498ce75c0704/FX%20Permutator/TA_FX%20Permutator-5.4.dat</source>
-      </version>
-      <version name="1.3.1" author="Tech Audio" time="2023-12-31T17:35:43Z">
-        <changelog><![CDATA[General UI improvements
-Selected FX filter
-Activation fix for Windows]]></changelog>
-        <source main="main">https://github.com/TeamAudio/reascripts/raw/2b57646ad5e6270f6447abbf03e0deeece560ef0/FX%20Permutator/TA_FX%20Permutator.lua</source>
-        <source file="TA_FX Permutator-5.3.dat">https://github.com/TeamAudio/reascripts/raw/2b57646ad5e6270f6447abbf03e0deeece560ef0/FX%20Permutator/TA_FX%20Permutator-5.3.dat</source>
-        <source file="TA_FX Permutator-5.4.dat">https://github.com/TeamAudio/reascripts/raw/2b57646ad5e6270f6447abbf03e0deeece560ef0/FX%20Permutator/TA_FX%20Permutator-5.4.dat</source>
-      </version>
-    </reapack>
-  </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 REAPER scripts from the Tech Audio nerds at Team Audio\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Audio software by audio people for audio people!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 We're the Tech Audio group, a handful of the team members from {\field{\*\fldinst{HYPERLINK "https://teamaud.io"}}{\fldrslt{\ul
+Team Audio
+}}}
+ at-large.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 You can find a few handy scripts in the FX category in our repository here - more to come!\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Beyond those, we've got some other projects out there and cooking - keep an eye on {\field{\*\fldinst{HYPERLINK "https://techaud.io"}}{\fldrslt{\ul
+TechAud.io
+}}}
+ for the latest news, releases & developer notes. We're learning a lot and looking forward to sharing.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Got ideas for scripts or plugins that you think would be great community resources? {\field{\*\fldinst{HYPERLINK "https://discord.gg/fCnkP9PhTQ"}}{\fldrslt{\ul
+Come hang out with us
+}}}
+ on discord!\par}
+}
+]]></description>
+    <link rel="website">https://techaud.io/</link>
+    <link rel="website">https://teamaud.io/</link>
+    <link rel="website">https://discord.gg/fCnkP9PhTQ</link>
+    <link rel="website">https://github.com/TeamAudio</link>
+    <link rel="website">https://x.com/techaud_io</link>
+  </metadata>
 </index>
