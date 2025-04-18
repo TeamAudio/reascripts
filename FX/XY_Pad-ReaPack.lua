@@ -1,0 +1,50 @@
+--@about
+--  # XY Pad by Tech Audio
+--
+--  Bad case of too many FX params and not enough hands? There's a pad for that!
+--
+--  ### Getting Started
+--  1. Make sure ReaImGui is installed (available through ReaPack)
+--  2. Run XY Pad - you'll be greeted with some instructions on how to add mappings and configure your experience.
+--  3. Add some mappings, and drag the cursor across the pad - eyes wide, watching those param values sing.
+--  4. Sit back, close your eyes and ponder the new sonic horizons you've opened up.
+--   
+--  ### Join our community!
+--  - [Discord](https://discord.gg/fCnkP9PhTQ)
+--@description XY Pad, by Tech Audio
+--@link https://techaud.io
+--@link https://github.com/TeamAudio
+--@link https://discord.gg/fCnkP9PhTQ
+--@version 1.0
+--@category FX
+--@author Tech Audio
+--@changelog
+--  Initial release
+--    - this is some test md
+--    - another item
+--  kinda curious
+--  how this section will be handled
+--  we're about to find out
+--  also, here's a link to a [manual](https://techaud.io/FX-Permutator-User-Guide-1.3.pdf)
+--@provides
+--  [nomain] .
+--  [main] XY_Pad/TA_XY Pad.lua
+--  [main] XY_Pad/TA_XY Pad Set X.lua
+--  [main] XY_Pad/TA_XY Pad Set Y.lua
+--  [main] XY_Pad/TA_XY Pad Full Reset.lua
+--  [lua] XY_Pad/config.lua
+--  [lua] XY_Pad/dkjson.lua
+--  [lua] XY_Pad/extstate.lua
+--  [lua] XY_Pad/fonts.lua
+--  [lua] XY_Pad/help.lua
+--  [lua] XY_Pad/imgui_theme.lua
+--  [lua] XY_Pad/logging.lua
+--  [lua] XY_Pad/mappings.lua
+--  [lua] XY_Pad/storage.lua
+--  [lua] XY_Pad/theme.lua
+--  [lua] XY_Pad/training.lua
+--  [lua] XY_Pad/trap.lua
+--  [lua] XY_Pad/ui.lua
+--  [lua] XY_Pad/widgets.lua
+--  [data] XY_Pad/manual.pdf https://techaud.io/FX-Permutator-User-Guide-1.3.pdf
+
