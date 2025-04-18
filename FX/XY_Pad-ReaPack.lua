@@ -20,12 +20,6 @@
 --@author Tech Audio
 --@changelog
 --  Initial release
---    - this is some test md
---    - another item
---  kinda curious
---  how this section will be handled
---  we're about to find out
---  also, here's a link to a [manual](https://techaud.io/FX-Permutator-User-Guide-1.3.pdf)
 --@provides
 --  [nomain] .
 --  [main] XY_Pad/TA_XY Pad.lua
@@ -46,5 +40,5 @@
 --  [lua] XY_Pad/trap.lua
 --  [lua] XY_Pad/ui.lua
 --  [lua] XY_Pad/widgets.lua
---  [data] XY_Pad/manual.pdf https://techaud.io/FX-Permutator-User-Guide-1.3.pdf
+--  [data] XY_Pad/manual.pdf https://techaud.io/static_manuals/20250418-xypad-1.0-manual.pdf
 
