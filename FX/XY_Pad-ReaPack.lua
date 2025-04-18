@@ -40,5 +40,5 @@
 --  [lua] XY_Pad/trap.lua
 --  [lua] XY_Pad/ui.lua
 --  [lua] XY_Pad/widgets.lua
---  [data] XY_Pad/manual.pdf https://techaud.io/static_manuals/20250418-xypad-1.0-manual.pdf
+--  [data] XY_Pad/20250418-xypad-1.0-manual.pdf https://techaud.io/static_manuals/20250418-xypad-1.0-manual.pdf
 
