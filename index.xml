@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="4f747f584ec175cc8e9f79a29cede13f1f0ea7b4">
+<index version="1" name="Team Audio Scripts" commit="4fd9b3aa2f58939dc1c98f671457711b57577729">
   <category name="FX">
     <reapack name="TA_FX Permutator.lua" type="script" desc="FX Permutator">
       <version name="1.3.1" author="Tech Audio" time="2025-03-26T17:17:41Z">
@@ -9,6 +9,12 @@ Activation fix for Windows]]></changelog>
         <source main="main">https://github.com/TeamAudio/reascripts/raw/614f664905749ef04eef7d8d89fa1bdd03031220/FX/TA_FX%20Permutator.lua</source>
         <source file="fxperm/TA_FX Permutator-5.3.dat">https://github.com/TeamAudio/reascripts/raw/614f664905749ef04eef7d8d89fa1bdd03031220/FX/fxperm/TA_FX%20Permutator-5.3.dat</source>
         <source file="fxperm/TA_FX Permutator-5.4.dat">https://github.com/TeamAudio/reascripts/raw/614f664905749ef04eef7d8d89fa1bdd03031220/FX/fxperm/TA_FX%20Permutator-5.4.dat</source>
+      </version>
+      <version name="1.3.2" author="Tech Audio" time="2025-06-20T18:03:42Z">
+        <changelog><![CDATA[Randomization fix]]></changelog>
+        <source main="main">https://github.com/TeamAudio/reascripts/raw/4fd9b3aa2f58939dc1c98f671457711b57577729/FX/TA_FX%20Permutator.lua</source>
+        <source file="fxperm/TA_FX Permutator-5.3.dat">https://github.com/TeamAudio/reascripts/raw/4fd9b3aa2f58939dc1c98f671457711b57577729/FX/fxperm/TA_FX%20Permutator-5.3.dat</source>
+        <source file="fxperm/TA_FX Permutator-5.4.dat">https://github.com/TeamAudio/reascripts/raw/4fd9b3aa2f58939dc1c98f671457711b57577729/FX/fxperm/TA_FX%20Permutator-5.4.dat</source>
       </version>
     </reapack>
     <reapack name="TA_Randomize Plugin Presets for Selected Tracks.lua" type="script" desc="TA Randomize the presets of all plugins for selected tracks">
