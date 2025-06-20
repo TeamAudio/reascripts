@@ -1,9 +1,7 @@
 -- @description FX Permutator
--- @version 1.3.1
+-- @version 1.3.2
 -- @changelog
---   General UI improvements
---   Selected FX filter
---   Activation fix for Windows
+--   Randomization fix
 -- @author Tech Audio
 -- @provides
 --   fxperm/TA_FX Permutator-5.3.dat
