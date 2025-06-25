@@ -1,0 +1,46 @@
+--@about
+--  # Crossfader by Tech Audio
+--
+--  Suffering from repetitive strain injury fading between media items? Crossfader!
+--
+--  A simple window will pop up and ask you for the fade duration and shape. REAPER
+--  currently provides the following fade shapes:
+--  - Linear
+--  - Slow Exponential
+--  - Slow Logarithmic
+--  - Fast Exponential
+--  - Fast Logarithmic
+--  - Slow Sine
+--  - Fast Sine
+--
+--  ### Getting Started
+--  1. Make sure ReaImGui is installed (available through ReaPack)
+--  2. Run Crossfader
+--  3. Select two or more media items (even across multiple tracks)
+--  4. Adjust the fade duration and select the shape
+--  5. Click "Go" or hit Enter
+--  6. Reclaim all your saved time - maybe start that podcast about rare birds of the Pacific Northwest?
+--
+--  ### Join our community!
+--  - [Discord](https://discord.gg/fCnkP9PhTQ)
+--@description Crossfader, by Tech Audio
+--@link https://techaud.io
+--@link https://github.com/TeamAudio
+--@link https://discord.gg/fCnkP9PhTQ
+--@version 1.0
+--@category Items Editing
+--@author Tech Audio
+--@changelog
+--  Initial release
+--@provides
+--  [nomain] .
+--  [main] Crossfader/TA_Crossfader.lua
+--  [lua] Crossfader/crossfade.lua
+--  [lua] Crossfader/dkjson.lua
+--  [lua] Crossfader/fonts.lua
+--  [lua] Crossfader/imgui_theme.lua
+--  [lua] Crossfader/storage.lua
+--  [lua] Crossfader/theme.lua
+--  [lua] Crossfader/trap.lua
+--  [lua] Crossfader/ui.lua
+--  [data] techaudio/20250624-crossfader-1.0-manual.pdf https://techaud.io/static_manuals/20250624-crossfader-1.0-manual.pdf
