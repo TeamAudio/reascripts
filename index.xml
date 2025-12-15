@@ -72,6 +72,30 @@ Discord
         <source type="script" file="XY_Pad/widgets.lua">https://github.com/TeamAudio/reascripts/raw/4f747f584ec175cc8e9f79a29cede13f1f0ea7b4/FX/XY_Pad/widgets.lua</source>
         <source type="data" file="XY_Pad/20250418-xypad-1.0-manual.pdf">https://techaud.io/static_manuals/20250418-xypad-1.0-manual.pdf</source>
       </version>
+      <version name="1.1.0" author="Tech Audio" time="2025-12-15T18:43:12Z">
+        <changelog><![CDATA[- smoke test for release pipeline
+- other cool stuff
+- 🚀]]></changelog>
+        <source>https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad-ReaPack.lua</source>
+        <source main="main" file="XY_Pad/TA_XY Pad.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/TA_XY%20Pad.lua</source>
+        <source main="main" file="XY_Pad/TA_XY Pad Set X.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/TA_XY%20Pad%20Set%20X.lua</source>
+        <source main="main" file="XY_Pad/TA_XY Pad Set Y.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/TA_XY%20Pad%20Set%20Y.lua</source>
+        <source main="main" file="XY_Pad/TA_XY Pad Full Reset.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/TA_XY%20Pad%20Full%20Reset.lua</source>
+        <source type="script" file="XY_Pad/config.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/config.lua</source>
+        <source type="script" file="XY_Pad/dkjson.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/dkjson.lua</source>
+        <source type="script" file="XY_Pad/extstate.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/extstate.lua</source>
+        <source type="script" file="XY_Pad/fonts.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/fonts.lua</source>
+        <source type="script" file="XY_Pad/help.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/help.lua</source>
+        <source type="script" file="XY_Pad/imgui_theme.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/imgui_theme.lua</source>
+        <source type="script" file="XY_Pad/logging.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/logging.lua</source>
+        <source type="script" file="XY_Pad/mappings.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/mappings.lua</source>
+        <source type="script" file="XY_Pad/storage.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/storage.lua</source>
+        <source type="script" file="XY_Pad/theme.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/theme.lua</source>
+        <source type="script" file="XY_Pad/training.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/training.lua</source>
+        <source type="script" file="XY_Pad/trap.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/trap.lua</source>
+        <source type="script" file="XY_Pad/ui.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/ui.lua</source>
+        <source type="script" file="XY_Pad/widgets.lua">https://github.com/TeamAudio/reascripts/raw/72b58936432345226cd98219ed560280d115ea55/FX/XY_Pad/widgets.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="Items Editing">
