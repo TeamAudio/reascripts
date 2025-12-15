@@ -8,18 +8,20 @@
 --  2. Run XY Pad - you'll be greeted with some instructions on how to add mappings and configure your experience.
 --  3. Add some mappings, and drag the cursor across the pad - eyes wide, watching those param values sing.
 --  4. Sit back, close your eyes and ponder the new sonic horizons you've opened up.
---   
+--
 --  ### Join our community!
 --  - [Discord](https://discord.gg/fCnkP9PhTQ)
 --@description XY Pad, by Tech Audio
 --@link https://techaud.io
 --@link https://github.com/TeamAudio
 --@link https://discord.gg/fCnkP9PhTQ
---@version 1.0
+--@version 1.1.0
 --@category FX
 --@author Tech Audio
 --@changelog
---  Initial release
+--  - smoke test for release pipeline
+--  - other cool stuff
+--  - 🚀
 --@provides
 --  [nomain] .
 --  [main] XY_Pad/TA_XY Pad.lua
@@ -40,5 +42,4 @@
 --  [lua] XY_Pad/trap.lua
 --  [lua] XY_Pad/ui.lua
 --  [lua] XY_Pad/widgets.lua
---  [data] XY_Pad/20250418-xypad-1.0-manual.pdf https://techaud.io/static_manuals/20250418-xypad-1.0-manual.pdf
 
