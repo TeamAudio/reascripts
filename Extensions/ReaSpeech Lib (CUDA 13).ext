@@ -1,0 +1,8 @@
+@description ReaSpeech Lib (CUDA 13; install only one backend)
+@version 0.1.0
+@author Team Audio
+@changelog
+  ReaSpeech Lib 0.1.0
+@provides
+  [win64] reaper_reaspeech_cuda13.dll https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda13.dll
+  [linux64] reaper_reaspeech_cuda13.so https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda13.so
