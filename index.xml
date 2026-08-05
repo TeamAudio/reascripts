@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="6f43ad4810881921d074e73d25a186448ed2480c">
+<index version="1" name="Team Audio Scripts" commit="ea2352380a7832305bf0dd23d7e99acace8f2f5f">
+  <category name="Extensions">
+    <reapack name="ReaSpeech Lib (CPU).ext" type="extension" desc="ReaSpeech Lib (CPU; install only one backend)">
+      <version name="0.1.0" author="Team Audio" time="2026-08-05T23:13:00Z">
+        <changelog><![CDATA[ReaSpeech Lib 0.1.0]]></changelog>
+        <source platform="win64" file="reaper_reaspeech_cpu.dll">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cpu.dll</source>
+        <source platform="linux64" file="reaper_reaspeech_cpu.so">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cpu.so</source>
+      </version>
+    </reapack>
+    <reapack name="ReaSpeech Lib (CUDA 12).ext" type="extension" desc="ReaSpeech Lib (CUDA 12; install only one backend)">
+      <version name="0.1.0" author="Team Audio" time="2026-08-05T23:13:00Z">
+        <changelog><![CDATA[ReaSpeech Lib 0.1.0]]></changelog>
+        <source platform="win64" file="reaper_reaspeech_cuda12.dll">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda12.dll</source>
+        <source platform="linux64" file="reaper_reaspeech_cuda12.so">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda12.so</source>
+      </version>
+    </reapack>
+    <reapack name="ReaSpeech Lib (CUDA 13).ext" type="extension" desc="ReaSpeech Lib (CUDA 13; install only one backend)">
+      <version name="0.1.0" author="Team Audio" time="2026-08-05T23:13:00Z">
+        <changelog><![CDATA[ReaSpeech Lib 0.1.0]]></changelog>
+        <source platform="win64" file="reaper_reaspeech_cuda13.dll">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda13.dll</source>
+        <source platform="linux64" file="reaper_reaspeech_cuda13.so">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda13.so</source>
+      </version>
+    </reapack>
+    <reapack name="ReaSpeech Lib (Metal).ext" type="extension" desc="ReaSpeech Lib (Metal; install only one backend)">
+      <version name="0.1.0" author="Team Audio" time="2026-08-05T23:13:00Z">
+        <changelog><![CDATA[ReaSpeech Lib 0.1.0]]></changelog>
+        <source platform="darwin-arm64" file="reaper_reaspeech_metal.dylib">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_metal.dylib</source>
+      </version>
+    </reapack>
+  </category>
   <category name="FX">
     <reapack name="TA_FX Permutator.lua" type="script" desc="FX Permutator">
       <version name="1.3.1" author="Tech Audio" time="2025-03-26T17:17:41Z">
