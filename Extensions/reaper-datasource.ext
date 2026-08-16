@@ -1,0 +1,25 @@
+@description reaper-datasource (Excel/CSV parsing API for ReaScripts)
+@version 0.1.0
+@author Tech Audio
+@link GitHub https://github.com/TeamAudio/reaper-datasource
+@link Tech Audio https://techaud.io
+@about
+  # reaper-datasource
+
+  Native tabular-data parsing for REAPER ReaScripts — spreadsheets and CSV,
+  no backend required. Functions appear in the `reaper` namespace; all calls
+  are synchronous and return JSON strings.
+
+  - Parse whole workbooks (.xlsx/.xlsm/.xlsb/.xls/.ods/.csv/.tsv) in one call
+  - Or open a handle and query sheets, row ranges, and cells incrementally
+  - Hidden-row detection, delimiter sniffing, unbounded result sizes
+
+  After installing, run `reaper.DataSource_OpenDocs()` from any script to
+  open the bundled API reference in your browser.
+@changelog
+  Initial release: DataSource_Parse/ListSheets blob API, DataSource_Open handle-based query API for xlsx/xlsm/xlsb/xls/ods/csv/tsv, and bundled API documentation (DataSource_OpenDocs).
+@provides
+  [win64] reaper_datasource.dll https://github.com/TeamAudio/reaper-datasource/releases/download/v0.1.0/reaper_datasource.dll
+  [linux64] reaper_datasource.so https://github.com/TeamAudio/reaper-datasource/releases/download/v0.1.0/reaper_datasource.so
+  [darwin-arm64] reaper_datasource.dylib https://github.com/TeamAudio/reaper-datasource/releases/download/v0.1.0/reaper_datasource.dylib
+  Data/reaper_datasource_doc.html https://github.com/TeamAudio/reaper-datasource/releases/download/v0.1.0/reaper_datasource_doc.html
