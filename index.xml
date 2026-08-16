@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="226ac596c75e008c92101d7250c9d8fa9c263987">
+<index version="1" name="Team Audio Scripts" commit="bd4d08b71446a0187a60777bba43c40a20ee931c">
   <category name="Extensions">
     <reapack name="reaper-datasource.ext" type="extension" desc="reaper-datasource (Excel/CSV parsing API for ReaScripts)">
       <metadata>
@@ -31,12 +31,22 @@
         <source platform="win64" file="reaper_reaspeech_cpu.dll">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cpu.dll</source>
         <source platform="linux64" file="reaper_reaspeech_cpu.so">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cpu.so</source>
       </version>
+      <version name="0.2.0" author="Team Audio" time="2026-08-16T17:19:40Z">
+        <changelog><![CDATA[Structured return values, F16, better resampling and no-speech detection]]></changelog>
+        <source platform="win64" file="reaper_reaspeech_cpu.dll">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_cpu.dll</source>
+        <source platform="linux64" file="reaper_reaspeech_cpu.so">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_cpu.so</source>
+      </version>
     </reapack>
     <reapack name="ReaSpeech Lib (CUDA 12).ext" type="extension" desc="ReaSpeech Lib (CUDA 12; install only one backend)">
       <version name="0.1.0" author="Team Audio" time="2026-08-05T23:13:00Z">
         <changelog><![CDATA[ReaSpeech Lib 0.1.0]]></changelog>
         <source platform="win64" file="reaper_reaspeech_cuda12.dll">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda12.dll</source>
         <source platform="linux64" file="reaper_reaspeech_cuda12.so">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda12.so</source>
+      </version>
+      <version name="0.2.0" author="Team Audio" time="2026-08-16T17:19:40Z">
+        <changelog><![CDATA[Structured return values, F16, better resampling and no-speech detection]]></changelog>
+        <source platform="win64" file="reaper_reaspeech_cuda12.dll">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_cuda12.dll</source>
+        <source platform="linux64" file="reaper_reaspeech_cuda12.so">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_cuda12.so</source>
       </version>
     </reapack>
     <reapack name="ReaSpeech Lib (CUDA 13).ext" type="extension" desc="ReaSpeech Lib (CUDA 13; install only one backend)">
@@ -45,11 +55,20 @@
         <source platform="win64" file="reaper_reaspeech_cuda13.dll">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda13.dll</source>
         <source platform="linux64" file="reaper_reaspeech_cuda13.so">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda13.so</source>
       </version>
+      <version name="0.2.0" author="Team Audio" time="2026-08-16T17:19:40Z">
+        <changelog><![CDATA[Structured return values, F16, better resampling and no-speech detection]]></changelog>
+        <source platform="win64" file="reaper_reaspeech_cuda13.dll">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_cuda13.dll</source>
+        <source platform="linux64" file="reaper_reaspeech_cuda13.so">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_cuda13.so</source>
+      </version>
     </reapack>
     <reapack name="ReaSpeech Lib (Metal).ext" type="extension" desc="ReaSpeech Lib (Metal; install only one backend)">
       <version name="0.1.0" author="Team Audio" time="2026-08-05T23:13:00Z">
         <changelog><![CDATA[ReaSpeech Lib 0.1.0]]></changelog>
         <source platform="darwin-arm64" file="reaper_reaspeech_metal.dylib">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_metal.dylib</source>
+      </version>
+      <version name="0.2.0" author="Team Audio" time="2026-08-16T17:19:40Z">
+        <changelog><![CDATA[Structured return values, F16, better resampling and no-speech detection]]></changelog>
+        <source platform="darwin-arm64" file="reaper_reaspeech_metal.dylib">https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_metal.dylib</source>
       </version>
     </reapack>
   </category>
