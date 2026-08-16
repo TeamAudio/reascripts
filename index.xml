@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Team Audio Scripts" commit="ea2352380a7832305bf0dd23d7e99acace8f2f5f">
+<index version="1" name="Team Audio Scripts" commit="226ac596c75e008c92101d7250c9d8fa9c263987">
   <category name="Extensions">
+    <reapack name="reaper-datasource.ext" type="extension" desc="reaper-datasource (Excel/CSV parsing API for ReaScripts)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 reaper-datasource\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Native tabular-data parsing for REAPER ReaScripts \u8212- spreadsheets and CSV, no backend required. Functions appear in the {\f1 reaper} namespace; all calls are synchronous and return JSON strings.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Parse whole workbooks (.xlsx/.xlsm/.xlsb/.xls/.ods/.csv/.tsv) in one call\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Or open a handle and query sheets, row ranges, and cells incrementally\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Hidden-row detection, delimiter sniffing, unbounded result sizes\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 After installing, run {\f1 reaper.DataSource_OpenDocs()} from any script to open the bundled API reference in your browser.\par}
+}
+]]></description>
+        <link rel="website" href="https://techaud.io">Tech Audio</link>
+      </metadata>
+      <version name="0.1.0" author="Tech Audio" time="2026-08-16T02:54:10Z">
+        <changelog><![CDATA[Initial release: DataSource_Parse/ListSheets blob API, DataSource_Open handle-based query API for xlsx/xlsm/xlsb/xls/ods/csv/tsv, and bundled API documentation (DataSource_OpenDocs).]]></changelog>
+        <source platform="win64" file="reaper_datasource.dll">https://github.com/TeamAudio/reaper-datasource/releases/download/v0.1.0/reaper_datasource.dll</source>
+        <source platform="linux64" file="reaper_datasource.so">https://github.com/TeamAudio/reaper-datasource/releases/download/v0.1.0/reaper_datasource.so</source>
+        <source platform="darwin-arm64" file="reaper_datasource.dylib">https://github.com/TeamAudio/reaper-datasource/releases/download/v0.1.0/reaper_datasource.dylib</source>
+        <source file="Data/reaper_datasource_doc.html">https://github.com/TeamAudio/reaper-datasource/releases/download/v0.1.0/reaper_datasource_doc.html</source>
+      </version>
+    </reapack>
     <reapack name="ReaSpeech Lib (CPU).ext" type="extension" desc="ReaSpeech Lib (CPU; install only one backend)">
       <version name="0.1.0" author="Team Audio" time="2026-08-05T23:13:00Z">
         <changelog><![CDATA[ReaSpeech Lib 0.1.0]]></changelog>
