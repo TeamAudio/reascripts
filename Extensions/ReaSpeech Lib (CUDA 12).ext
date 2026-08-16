@@ -1,8 +1,8 @@
 @description ReaSpeech Lib (CUDA 12; install only one backend)
-@version 0.1.0
+@version 0.2.0
 @author Team Audio
 @changelog
-  ReaSpeech Lib 0.1.0
+  Structured return values, F16, better resampling and no-speech detection
 @provides
-  [win64] reaper_reaspeech_cuda12.dll https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda12.dll
-  [linux64] reaper_reaspeech_cuda12.so https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_cuda12.so
+  [win64] reaper_reaspeech_cuda12.dll https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_cuda12.dll
+  [linux64] reaper_reaspeech_cuda12.so https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_cuda12.so

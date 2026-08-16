@@ -1,7 +1,7 @@
 @description ReaSpeech Lib (Metal; install only one backend)
-@version 0.1.0
+@version 0.2.0
 @author Team Audio
 @changelog
-  ReaSpeech Lib 0.1.0
+  Structured return values, F16, better resampling and no-speech detection
 @provides
-  [darwin-arm64] reaper_reaspeech_metal.dylib https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.1.0/reaper_reaspeech_metal.dylib
+  [darwin-arm64] reaper_reaspeech_metal.dylib https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.2.0/reaper_reaspeech_metal.dylib
