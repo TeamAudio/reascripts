@@ -1,0 +1,36 @@
+@description ReaSock: connect REAPER to other programs
+@version 0.1.0
+@author Tech Audio
+@links
+  GitHub https://github.com/TeamAudio/reasock
+  Tech Audio https://techaud.io
+@about
+  # ReaSock
+  
+  A bridge between REAPER and other programs. ReaSock opens a local WebSocket
+  that speaks JSON-RPC 2.0, so tools outside REAPER can:
+  
+  - **Lend** REAPER actions: register entries in the action list that users can
+    bind to keys, menus, and toolbars, and get called when they run
+  - **Tell**: follow transport, project, and selection changes as they happen
+  - **Ask**: read tracks, items, takes, and markers
+  
+  Scripts inside REAPER can use the same protocol through ReaSock_Open,
+  ReaSock_Call, and ReaSock_Poll.
+  
+  Run **ReaSock: Open API documentation** from the Actions list, or call
+  `reaper.ReaSock_OpenDocs()`, for the full reference.
+@changelog
+  - First release: a WebSocket and ReaScript bridge between REAPER and other programs, with actions clients can register (Lend), state-change events (Tell), queries for tracks, items, takes, and markers (Ask), and a bundled API reference.
+@provides
+  [win64] reaper_reasock.dll https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-win64.dll
+  [linux64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-linux64.so
+  [linux-aarch64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-linux-aarch64.so
+  [darwin-arm64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-darwin-arm64.dylib
+  [darwin64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-darwin64.dylib
+  [data] reasock/reasock-api.html https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reasock-api.html
+  [data] reasock/openrpc.json https://github.com/TeamAudio/reasock/releases/download/v0.1.0/openrpc.json
+  [data] reasock/licenses/karla-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.1.0/karla-LICENSE.txt
+  [data] reasock/licenses/roboto-slab-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.1.0/roboto-slab-LICENSE.txt
+  [script main] ReaSock/ReaSock_Follow selection.lua https://github.com/TeamAudio/reasock/releases/download/v0.1.0/follow-selection.lua
+  [script] ReaSock/json.lua https://github.com/TeamAudio/reasock/releases/download/v0.1.0/json.lua

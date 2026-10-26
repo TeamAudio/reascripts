@@ -25,6 +25,39 @@
         <source file="Data/reaper_datasource_doc.html">https://github.com/TeamAudio/reaper-datasource/releases/download/v0.1.0/reaper_datasource_doc.html</source>
       </version>
     </reapack>
+    <reapack name="ReaSock.ext" type="extension" desc="ReaSock: connect REAPER to other programs">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 ReaSock\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A bridge between REAPER and other programs. ReaSock opens a local WebSocket that speaks JSON-RPC 2.0, so tools outside REAPER can:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Lend} REAPER actions: register entries in the action list that users can bind to keys, menus, and toolbars, and get called when they run\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Tell}: follow transport, project, and selection changes as they happen\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Ask}: read tracks, items, takes, and markers\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Scripts inside REAPER can use the same protocol through ReaSock_Open, ReaSock_Call, and ReaSock_Poll.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Run {\b ReaSock: Open API documentation} from the Actions list, or call {\f1 reaper.ReaSock_OpenDocs()}, for the full reference.\par}
+}
+]]></description>
+        <link rel="website" href="https://github.com/TeamAudio/reasock">GitHub</link>
+        <link rel="website" href="https://techaud.io">Tech Audio</link>
+      </metadata>
+      <version name="0.1.0" author="Tech Audio" time="2026-10-26T04:43:47Z">
+        <changelog><![CDATA[- First release: a WebSocket and ReaScript bridge between REAPER and other programs, with actions clients can register (Lend), state-change events (Tell), queries for tracks, items, takes, and markers (Ask), and a bundled API reference.]]></changelog>
+        <source platform="win64" file="reaper_reasock.dll">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-win64.dll</source>
+        <source platform="linux64" file="reaper_reasock.so">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-linux64.so</source>
+        <source platform="linux-aarch64" file="reaper_reasock.so">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-linux-aarch64.so</source>
+        <source platform="darwin-arm64" file="reaper_reasock.dylib">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-darwin-arm64.dylib</source>
+        <source platform="darwin64" file="reaper_reasock.dylib">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reaper_reasock-darwin64.dylib</source>
+        <source type="data" file="reasock/reasock-api.html">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/reasock-api.html</source>
+        <source type="data" file="reasock/openrpc.json">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/openrpc.json</source>
+        <source type="data" file="reasock/licenses/karla-LICENSE.txt">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/karla-LICENSE.txt</source>
+        <source type="data" file="reasock/licenses/roboto-slab-LICENSE.txt">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/roboto-slab-LICENSE.txt</source>
+        <source main="main" type="script" file="ReaSock/ReaSock_Follow selection.lua">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/follow-selection.lua</source>
+        <source type="script" file="ReaSock/json.lua">https://github.com/TeamAudio/reasock/releases/download/v0.1.0/json.lua</source>
+      </version>
+    </reapack>
     <reapack name="ReaSpeech Lib (CPU).ext" type="extension" desc="ReaSpeech Lib (CPU; install only one backend)">
       <version name="0.1.0" author="Team Audio" time="2026-08-05T23:13:00Z">
         <changelog><![CDATA[ReaSpeech Lib 0.1.0]]></changelog>
