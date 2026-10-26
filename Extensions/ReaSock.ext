@@ -1,5 +1,5 @@
 @description ReaSock: connect REAPER to other programs
-@version 0.2.0
+@version 0.2.1
 @author Tech Audio
 @links
   GitHub https://github.com/TeamAudio/reasock
@@ -24,19 +24,17 @@
   Run **ReaSock: Open API documentation** from the Actions list, or call
   `reaper.ReaSock_OpenDocs()`, for the full reference.
 @changelog
-  - Security: WebSocket clients must send the `token` from REAPER's instance file (`~/.reasock/instances/<pid>.json`) in `initialize` (protocol 0.3.0). The token is random each time REAPER starts, and on macOS and Linux the instance file and its folders are now readable only by your user, so other users on the machine and web pages can't connect. Scripts inside REAPER need no token.
-  - Examples: Python (a hotkey to copy selected items' file paths, a selection follower), an MCP server for AI agents, shell helpers with websocat, a browser dashboard, and a ReaImGui inspector panel, which also ships in the ReaPack package.
-  - `@techaudio/reasock` on npm: a typed TypeScript client (every method, param, result, and event typed from the OpenRPC description), with reconnect that restores actions and subscriptions after REAPER restarts, and a browser build.
+  - `@techaudio/reasock`: a refused `connect()` (a wrong token, say) closes its connection, so a Node script exits instead of hanging. And an action or subscription REAPER refused is no longer retried on every reconnect, where it failed each time and stopped the client from ever reconnecting.
 @provides
-  [win64] reaper_reasock.dll https://github.com/TeamAudio/reasock/releases/download/v0.2.0/reaper_reasock-win64.dll
-  [linux64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.2.0/reaper_reasock-linux64.so
-  [linux-aarch64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.2.0/reaper_reasock-linux-aarch64.so
-  [darwin-arm64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.2.0/reaper_reasock-darwin-arm64.dylib
-  [darwin64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.2.0/reaper_reasock-darwin64.dylib
-  [data] reasock/reasock-api.html https://github.com/TeamAudio/reasock/releases/download/v0.2.0/reasock-api.html
-  [data] reasock/openrpc.json https://github.com/TeamAudio/reasock/releases/download/v0.2.0/openrpc.json
-  [data] reasock/licenses/karla-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.2.0/karla-LICENSE.txt
-  [data] reasock/licenses/roboto-slab-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.2.0/roboto-slab-LICENSE.txt
-  [script main] ReaSock/ReaSock_Follow selection.lua https://github.com/TeamAudio/reasock/releases/download/v0.2.0/follow-selection.lua
-  [script main] ReaSock/ReaSock_Inspector panel.lua https://github.com/TeamAudio/reasock/releases/download/v0.2.0/inspector-panel.lua
-  [script] ReaSock/json.lua https://github.com/TeamAudio/reasock/releases/download/v0.2.0/json.lua
+  [win64] reaper_reasock.dll https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-win64.dll
+  [linux64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-linux64.so
+  [linux-aarch64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-linux-aarch64.so
+  [darwin-arm64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-darwin-arm64.dylib
+  [darwin64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-darwin64.dylib
+  [data] reasock/reasock-api.html https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reasock-api.html
+  [data] reasock/openrpc.json https://github.com/TeamAudio/reasock/releases/download/v0.2.1/openrpc.json
+  [data] reasock/licenses/karla-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.2.1/karla-LICENSE.txt
+  [data] reasock/licenses/roboto-slab-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.2.1/roboto-slab-LICENSE.txt
+  [script main] ReaSock/ReaSock_Follow selection.lua https://github.com/TeamAudio/reasock/releases/download/v0.2.1/follow-selection.lua
+  [script main] ReaSock/ReaSock_Inspector panel.lua https://github.com/TeamAudio/reasock/releases/download/v0.2.1/inspector-panel.lua
+  [script] ReaSock/json.lua https://github.com/TeamAudio/reasock/releases/download/v0.2.1/json.lua
