@@ -104,6 +104,32 @@
         <source main="main" type="script" file="ReaSock/ReaSock_Inspector panel.lua">https://github.com/TeamAudio/reasock/releases/download/v0.2.1/inspector-panel.lua</source>
         <source type="script" file="ReaSock/json.lua">https://github.com/TeamAudio/reasock/releases/download/v0.2.1/json.lua</source>
       </version>
+      <version name="0.3.0" author="Tech Audio" time="2026-10-26T11:05:55Z">
+        <changelog><![CDATA[- Protocol 0.4.0: ReaSock can now change the project, so a sound library or media browser can place sounds in REAPER.
+- `items.insert` places media files, or parts of them, at the edit cursor or a given time: on the current track, a given one, or a new one; one after another, each on its own track, or as takes of one item. Each file can bring a take name, item notes, and extension data. Every file is checked first, so a request with a bad file changes nothing, and the error says which file and why.
+- `items.set` and `takes.set` change item notes, take names, and extension data (per-item and per-take strings saved in the project), in batches.
+- Every change is one undo point, named after the client unless it passes its own name.
+- Peaks for inserted files are built a little at a time, so long files don't stall REAPER.
+- `items.list`, `items.listSelected`, and `items.get` can include item notes and extension data; `takes.list` can include extension data.
+- Items now report their active take (`takeGuid`, `startOffset`, `playRate`) and whether they loop their source, so a client can work out which part of a file an item plays. Slip edits now count as changes in `items.selectionChanged`.
+- `transport.get` and `transport.changed` include the edit cursor and the time selection.
+- `initialize` lists the methods the server supports (`capabilities.methods`), so clients can tell what an older ReaSock lacks.
+- `debug.stats` reports main-thread time per method.
+- `@techaudio/reasock`: `createClient()` returns a client right away and connects when REAPER starts, for apps that start before REAPER. Actions and subscriptions set up meanwhile wait for the connection. Calls fail at once with `NotConnectedError` while disconnected, and a REAPER that doesn't answer in time gives `TimeoutError`, so apps can tell "not running" from "busy". `supports()` says whether the connected ReaSock has a method, `RpcError` carries the error's `data`, and the `signal` option stops a client.
+- Examples: `place.mjs` places media files at the edit cursor.]]></changelog>
+        <source platform="win64" file="reaper_reasock.dll">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-win64.dll</source>
+        <source platform="linux64" file="reaper_reasock.so">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-linux64.so</source>
+        <source platform="linux-aarch64" file="reaper_reasock.so">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-linux-aarch64.so</source>
+        <source platform="darwin-arm64" file="reaper_reasock.dylib">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-darwin-arm64.dylib</source>
+        <source platform="darwin64" file="reaper_reasock.dylib">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-darwin64.dylib</source>
+        <source type="data" file="reasock/reasock-api.html">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reasock-api.html</source>
+        <source type="data" file="reasock/openrpc.json">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/openrpc.json</source>
+        <source type="data" file="reasock/licenses/karla-LICENSE.txt">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/karla-LICENSE.txt</source>
+        <source type="data" file="reasock/licenses/roboto-slab-LICENSE.txt">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/roboto-slab-LICENSE.txt</source>
+        <source main="main" type="script" file="ReaSock/ReaSock_Follow selection.lua">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/follow-selection.lua</source>
+        <source main="main" type="script" file="ReaSock/ReaSock_Inspector panel.lua">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/inspector-panel.lua</source>
+        <source type="script" file="ReaSock/json.lua">https://github.com/TeamAudio/reasock/releases/download/v0.3.0/json.lua</source>
+      </version>
     </reapack>
     <reapack name="ReaSpeech Lib (CPU).ext" type="extension" desc="ReaSpeech Lib (CPU; install only one backend)">
       <version name="0.1.0" author="Team Audio" time="2026-08-05T23:13:00Z">
