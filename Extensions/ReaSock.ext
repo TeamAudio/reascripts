@@ -1,5 +1,5 @@
 @description ReaSock: connect REAPER to other programs
-@version 0.2.1
+@version 0.3.0
 @author Tech Audio
 @links
   GitHub https://github.com/TeamAudio/reasock
@@ -24,17 +24,28 @@
   Run **ReaSock: Open API documentation** from the Actions list, or call
   `reaper.ReaSock_OpenDocs()`, for the full reference.
 @changelog
-  - `@techaudio/reasock`: a refused `connect()` (a wrong token, say) closes its connection, so a Node script exits instead of hanging. And an action or subscription REAPER refused is no longer retried on every reconnect, where it failed each time and stopped the client from ever reconnecting.
+  - Protocol 0.4.0: ReaSock can now change the project, so a sound library or media browser can place sounds in REAPER.
+  - `items.insert` places media files, or parts of them, at the edit cursor or a given time: on the current track, a given one, or a new one; one after another, each on its own track, or as takes of one item. Each file can bring a take name, item notes, and extension data. Every file is checked first, so a request with a bad file changes nothing, and the error says which file and why.
+  - `items.set` and `takes.set` change item notes, take names, and extension data (per-item and per-take strings saved in the project), in batches.
+  - Every change is one undo point, named after the client unless it passes its own name.
+  - Peaks for inserted files are built a little at a time, so long files don't stall REAPER.
+  - `items.list`, `items.listSelected`, and `items.get` can include item notes and extension data; `takes.list` can include extension data.
+  - Items now report their active take (`takeGuid`, `startOffset`, `playRate`) and whether they loop their source, so a client can work out which part of a file an item plays. Slip edits now count as changes in `items.selectionChanged`.
+  - `transport.get` and `transport.changed` include the edit cursor and the time selection.
+  - `initialize` lists the methods the server supports (`capabilities.methods`), so clients can tell what an older ReaSock lacks.
+  - `debug.stats` reports main-thread time per method.
+  - `@techaudio/reasock`: `createClient()` returns a client right away and connects when REAPER starts, for apps that start before REAPER. Actions and subscriptions set up meanwhile wait for the connection. Calls fail at once with `NotConnectedError` while disconnected, and a REAPER that doesn't answer in time gives `TimeoutError`, so apps can tell "not running" from "busy". `supports()` says whether the connected ReaSock has a method, `RpcError` carries the error's `data`, and the `signal` option stops a client.
+  - Examples: `place.mjs` places media files at the edit cursor.
 @provides
-  [win64] reaper_reasock.dll https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-win64.dll
-  [linux64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-linux64.so
-  [linux-aarch64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-linux-aarch64.so
-  [darwin-arm64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-darwin-arm64.dylib
-  [darwin64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reaper_reasock-darwin64.dylib
-  [data] reasock/reasock-api.html https://github.com/TeamAudio/reasock/releases/download/v0.2.1/reasock-api.html
-  [data] reasock/openrpc.json https://github.com/TeamAudio/reasock/releases/download/v0.2.1/openrpc.json
-  [data] reasock/licenses/karla-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.2.1/karla-LICENSE.txt
-  [data] reasock/licenses/roboto-slab-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.2.1/roboto-slab-LICENSE.txt
-  [script main] ReaSock/ReaSock_Follow selection.lua https://github.com/TeamAudio/reasock/releases/download/v0.2.1/follow-selection.lua
-  [script main] ReaSock/ReaSock_Inspector panel.lua https://github.com/TeamAudio/reasock/releases/download/v0.2.1/inspector-panel.lua
-  [script] ReaSock/json.lua https://github.com/TeamAudio/reasock/releases/download/v0.2.1/json.lua
+  [win64] reaper_reasock.dll https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-win64.dll
+  [linux64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-linux64.so
+  [linux-aarch64] reaper_reasock.so https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-linux-aarch64.so
+  [darwin-arm64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-darwin-arm64.dylib
+  [darwin64] reaper_reasock.dylib https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reaper_reasock-darwin64.dylib
+  [data] reasock/reasock-api.html https://github.com/TeamAudio/reasock/releases/download/v0.3.0/reasock-api.html
+  [data] reasock/openrpc.json https://github.com/TeamAudio/reasock/releases/download/v0.3.0/openrpc.json
+  [data] reasock/licenses/karla-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.3.0/karla-LICENSE.txt
+  [data] reasock/licenses/roboto-slab-LICENSE.txt https://github.com/TeamAudio/reasock/releases/download/v0.3.0/roboto-slab-LICENSE.txt
+  [script main] ReaSock/ReaSock_Follow selection.lua https://github.com/TeamAudio/reasock/releases/download/v0.3.0/follow-selection.lua
+  [script main] ReaSock/ReaSock_Inspector panel.lua https://github.com/TeamAudio/reasock/releases/download/v0.3.0/inspector-panel.lua
+  [script] ReaSock/json.lua https://github.com/TeamAudio/reasock/releases/download/v0.3.0/json.lua
