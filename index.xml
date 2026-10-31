@@ -392,6 +392,17 @@ Discord
       </version>
     </reapack>
   </category>
+  <category name="ReaSpeech">
+    <reapack name="ReaSpeech.lua" type="script" desc="ReaSpeech - speech-to-text transcription inside REAPER">
+      <metadata>
+        <link rel="website">https://github.com/TeamAudio/reaspeech</link>
+      </metadata>
+      <version name="1.0.0" author="Tech Audio" time="2026-10-31T18:36:23Z">
+        <changelog><![CDATA[Replaced the Docker/PyTorch/curl backend with ReaSpeech Lib.]]></changelog>
+        <source main="main">https://github.com/TeamAudio/reascripts/raw/e665b1454e8f7af26b0685b9fc6a206206a00ddf/ReaSpeech/ReaSpeech.lua</source>
+      </version>
+    </reapack>
+  </category>
   <metadata>
     <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
