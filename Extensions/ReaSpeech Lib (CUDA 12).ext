@@ -1,8 +1,8 @@
 @description ReaSpeech Lib (CUDA 12; install only one backend)
-@version 0.3.0
+@version 0.3.1
 @author Team Audio
 @changelog
-  Audio ranges, language detection events, minor fixes
+  Fix Windows shutdown crash, update ONNX Runtime
 @provides
-  [win64] reaper_reaspeech_cuda12.dll https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.3.0/reaper_reaspeech_cuda12.dll
-  [linux64] reaper_reaspeech_cuda12.so https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.3.0/reaper_reaspeech_cuda12.so
+  [win64] reaper_reaspeech_cuda12.dll https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.3.1/reaper_reaspeech_cuda12.dll
+  [linux64] reaper_reaspeech_cuda12.so https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.3.1/reaper_reaspeech_cuda12.so
