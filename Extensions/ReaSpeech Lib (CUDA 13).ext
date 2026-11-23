@@ -1,8 +1,8 @@
 @description ReaSpeech Lib (CUDA 13; install only one backend)
-@version 0.3.1
+@version 0.3.2
 @author Team Audio
 @changelog
-  Fix Windows shutdown crash, update ONNX Runtime
+  Tune Whisper cross-attention caching
 @provides
-  [win64] reaper_reaspeech_cuda13.dll https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.3.1/reaper_reaspeech_cuda13.dll
-  [linux64] reaper_reaspeech_cuda13.so https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.3.1/reaper_reaspeech_cuda13.so
+  [win64] reaper_reaspeech_cuda13.dll https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.3.2/reaper_reaspeech_cuda13.dll
+  [linux64] reaper_reaspeech_cuda13.so https://github.com/TeamAudio/reaspeech-lib/releases/download/v0.3.2/reaper_reaspeech_cuda13.so
