@@ -1,0 +1,182 @@
+name: Publish to ReaPack
+description: >
+  Commit package files already staged in a TeamAudio/reascripts checkout,
+  update index.xml with reapack-index, and open a PR against main. Retries
+  transient GitHub errors and never opens a duplicate PR.
+
+# The caller checks out reascripts (with `token`, so the push is authorized),
+# then copies or builds its package files into that checkout, then calls this.
+# Everything after staging is the same for every project, so it lives here.
+
+inputs:
+  token:
+    description: Token that can push branches, create labels and open PRs in reascripts.
+    required: true
+  tag:
+    description: Release tag being published (eg. v1.2.3).
+    required: true
+  package-name:
+    description: Human-readable package name for the commit and PR title (eg. ReaSpeech).
+    required: true
+  package-slug:
+    description: Lowercase slug for the branch name and the package label (eg. reaspeech).
+    required: true
+  paths:
+    description: Newline-separated paths, relative to the reascripts checkout, to commit.
+    required: true
+  reascripts-path:
+    description: Path of the reascripts checkout, relative to the workspace.
+    required: false
+    default: reascripts
+  pr-body:
+    description: PR body. Defaults to a line linking the caller's GitHub release for the tag.
+    required: false
+    default: ''
+
+outputs:
+  result:
+    description: "created, existing (an open PR for the branch was adopted), or no-changes."
+    value: ${{ steps.publish.outputs.result }}
+  pr-url:
+    description: URL of the PR, unless result is no-changes.
+    value: ${{ steps.publish.outputs.pr-url }}
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2'
+
+    - name: Install reapack-index (pandoc renders @about)
+      shell: bash
+      run: |
+        set -euo pipefail
+        sudo apt-get update
+        sudo apt-get install -y pandoc
+        gem install reapack-index
+
+    - name: Commit, index, push and open PR
+      id: publish
+      shell: bash
+      # Inputs arrive as env vars rather than ${{ }} in the script, so a tag
+      # or name can never be interpreted as shell.
+      env:
+        GH_TOKEN: ${{ inputs.token }}
+        TAG: ${{ inputs.tag }}
+        PACKAGE_NAME: ${{ inputs.package-name }}
+        PACKAGE_SLUG: ${{ inputs.package-slug }}
+        PATHS: ${{ inputs.paths }}
+        REASCRIPTS_PATH: ${{ inputs.reascripts-path }}
+        PR_BODY: ${{ inputs.pr-body }}
+      run: |
+        set -euo pipefail
+
+        # Retry a command with exponential backoff (15s, 30s, 60s, 120s), to
+        # ride out transient GitHub API/git errors. A command inside `until`
+        # runs without errexit, so functions passed here must return their
+        # own failures explicitly.
+        retry() {
+          local max=5 delay=15 n=1
+          until "$@"; do
+            if [ "$n" -ge "$max" ]; then
+              echo "::error::'$*' failed after ${max} attempts"
+              return 1
+            fi
+            echo "::warning::'$*' failed (attempt ${n}/${max}); retrying in ${delay}s"
+            sleep "$delay"
+            n=$((n + 1))
+            delay=$((delay * 2))
+          done
+        }
+
+        # Idempotent: GitHub can report an error after the PR was actually
+        # created, so adopt an existing open PR instead of opening a duplicate.
+        open_pr() {
+          local existing
+          existing="$(gh pr list --head "$BRANCH" --base main --state open --json url --jq '.[0].url // empty')" || return 1
+          if [ -n "$existing" ]; then
+            PR_URL="$existing"
+            RESULT=existing
+            return 0
+          fi
+          PR_URL="$(gh pr create \
+            --title "ReaPack: ${PACKAGE_NAME} ${TAG}" \
+            --body "$PR_BODY" \
+            --base main \
+            --head "$BRANCH" \
+            --label reapack \
+            --label "$PACKAGE_SLUG")" || return 1
+          RESULT=created
+        }
+
+        if ! [[ "$PACKAGE_SLUG" =~ ^[a-z0-9][a-z0-9-]*$ ]]; then
+          echo "::error::package-slug must be lowercase letters, digits and dashes (got '${PACKAGE_SLUG}')"
+          exit 1
+        fi
+
+        mapfile -t paths < <(printf '%s\n' "$PATHS" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' -e '/^$/d')
+        if [ "${#paths[@]}" -eq 0 ]; then
+          echo "::error::paths is empty; nothing to publish"
+          exit 1
+        fi
+
+        if [ -z "$PR_BODY" ]; then
+          PR_BODY="Automated ReaPack publish for [${PACKAGE_NAME} ${TAG}](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/${TAG})."
+        fi
+
+        # Unique per workflow run: the force-push below can only overwrite an
+        # earlier attempt of this same run, which is what lets "Re-run failed
+        # jobs" succeed after a push went through but the PR step failed.
+        BRANCH="reapack/${PACKAGE_SLUG}/${TAG}-${GITHUB_RUN_ID}"
+
+        cd "$REASCRIPTS_PATH"
+
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        git checkout -B "$BRANCH"
+        git add -A -- "${paths[@]}"
+
+        if git diff --cached --quiet; then
+          echo "::notice::No changes to publish for ${PACKAGE_NAME} ${TAG}; reascripts main already has them. No branch pushed, no PR opened."
+          echo "result=no-changes" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+
+        git commit -m "ReaPack: ${PACKAGE_NAME} ${TAG}"
+
+        # The indexer makes its own commit, matching existing reascripts
+        # history. Some reapack-index versions reject symbolic revs like HEAD
+        # for --scan, so pass the concrete SHA.
+        reapack-index --commit --scan "$(git rev-parse HEAD)"
+
+        retry git push --force origin "$BRANCH"
+
+        retry gh label create reapack --description "ReaPack publish" --color 0e8a16 --force
+        retry gh label create "$PACKAGE_SLUG" --description "$PACKAGE_NAME" --color 1d76db --force
+
+        PR_URL=""
+        RESULT=""
+        if ! retry open_pr; then
+          REPO="$(gh repo view --json nameWithOwner --jq .nameWithOwner 2>/dev/null || echo TeamAudio/reascripts)"
+          {
+            echo "## ReaPack publish for ${PACKAGE_NAME} ${TAG}: PR not opened"
+            echo ""
+            echo "The branch \`${BRANCH}\` was pushed with the complete publish, but opening the PR failed."
+            echo "Either re-run the failed job (it reuses this branch), or open the PR from it:"
+            echo ""
+            echo "\`\`\`"
+            echo "gh pr create -R ${REPO} --base main --head ${BRANCH} --title \"ReaPack: ${PACKAGE_NAME} ${TAG}\" --label reapack --label ${PACKAGE_SLUG} --body \"Automated ReaPack publish for ${TAG}.\""
+            echo "\`\`\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+        fi
+
+        echo "::notice::ReaPack PR (${RESULT}): ${PR_URL}"
+        echo "ReaPack PR for ${PACKAGE_NAME} ${TAG} (${RESULT}): ${PR_URL}" >> "$GITHUB_STEP_SUMMARY"
+        {
+          echo "result=${RESULT}"
+          echo "pr-url=${PR_URL}"
+        } >> "$GITHUB_OUTPUT"
