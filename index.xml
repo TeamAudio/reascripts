@@ -439,6 +439,10 @@ Discord
         <changelog><![CDATA[Replaced the Docker/PyTorch/curl backend with ReaSpeech Lib.]]></changelog>
         <source main="main">https://github.com/TeamAudio/reascripts/raw/e665b1454e8f7af26b0685b9fc6a206206a00ddf/ReaSpeech/ReaSpeech.lua</source>
       </version>
+      <version name="1.1.0" author="Tech Audio" time="2026-11-25T17:24:04Z">
+        <changelog><![CDATA[Replaced the Docker/PyTorch/curl backend with ReaSpeech Lib.]]></changelog>
+        <source main="main">https://github.com/TeamAudio/reascripts/raw/8fc33d50981bd5e9588d7b852e8f514669132c7e/ReaSpeech/ReaSpeech.lua</source>
+      </version>
     </reapack>
   </category>
   <metadata>
